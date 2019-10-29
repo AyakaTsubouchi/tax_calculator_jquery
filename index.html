@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <!-- for mobile：don't change the content -->
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tax Calculator</title>
+    <!-- jQuery -->
+    <script src="lib/jquery.min.js"></script>
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- import JavaScript -->
+    <script src="js/main.js"></script>
+   
+</head>
+<body>
+  <div class="container">
+    <h1>Tax Calculator</h1>
+    <h5>
+        GST, is 5 percent.  PST, in British Columbia, is 7 percent.
+        *There are exceptions to PST but this calculator hasn't suported yet.
+      </h5>
+    <br>
+    <!-- input text -->
+    <div class="form-group">
+      <label>Amount without tax</label>
+      <input type="number" id="price" name="name" value="10" class="form-control"/>
+    </div>
+    
+    <div class="form-group">
+      <label>GST</label>
+      <input type="number" id="gstRate" name="name" value="5" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label>PST</label>
+      <input type="number" id="pstRate" name="name" value="7" class="form-control" />
+    </div>
+    <!-- button -->
+    <button type="button" class="btn btn-primary btn-block" id="btnExec">Exec</button>
+    
+    
+    
+    <!-- output text -->
+    <div class="form-group">
+      <label>TAX</label>
+      <input type="number" id="taxAmount" name="name" value="" class="form-control" />
+    </div>
+    
+    <div class="form-group">
+      <label>Amount with taxes</label>
+      <input type="number" id="taxIncluded" name="name" value="" class="form-control" />
+    </div>
+  </div>
+ 
+</body>
+</html>
